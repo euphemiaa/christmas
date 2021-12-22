@@ -142,7 +142,7 @@ button {
     padding: 4.5rem 0 1rem;
 }
 
-.section_title {
+.section__title {
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2-5);
     text-align: center;
@@ -250,6 +250,10 @@ button {
 
 /*CHANGE BACKGROUND HEADER */
 
+.scroll-header {
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+
 
 /*ACTIVE LINK*/
 
@@ -280,4 +284,179 @@ button {
     font-size: var(--small-font-size);
     padding: 0 2rem;
     margin-bottom: var(--mb-2-5);
+}
+
+
+/*==================== BUTTONS ====================*/
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #ffff;
+    padding: 1.15rem 2.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 3rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+
+/*==================== GIVING ====================*/
+
+.giving__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.5rem;
+}
+
+.giving__content {
+    text-align: center;
+}
+
+.giving__img {
+    width: 100px;
+    transition: .3s;
+}
+
+.giving__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.giving_description {
+    font-size: var(--small-font-size);
+}
+
+.giving__img:hover {
+    transform: translateY(-.25rem);
+}
+
+
+/*==================== CELEBRATE ====================*/
+
+.celebrate__container {
+    row-gap: 1rem;
+}
+
+.celebrate__data {
+    text-align: center;
+}
+
+.celebrate__title {
+    margin-bottom: var(--mb-1-5);
+}
+
+.celebrate__description {
+    margin-bottom: var(--mb-2-5);
+}
+
+.celebrate__img {
+    width: 280px;
+    justify-self: center;
+}
+
+
+/*==================== GIFT ====================*/
+
+.gift__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gift__card {
+    display: grid;
+    position: relative;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+    padding: 1.5rem 1rem 1rem;
+    border-radius: .75rem;
+}
+
+.gift__img {
+    width: 100px;
+    justify-self: center;
+    margin-bottom: var(--mb-0-25);
+    transition: .3s;
+}
+
+.gift__icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.gift__icon:hover {
+    color: var(--first-color-alt);
+    font-size: 1.5rem;
+}
+
+.gift_price {
+    font-size: var(--h3-font-size);
+}
+
+.gift__title {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+}
+
+.gift__card:hover .gift__img {
+    transform: translateY(-.25rem);
+}
+
+
+/*==================== NEW ====================*/
+
+.new__card {
+    position: relative;
+    width: 230px;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+    padding: 1rem 1rem 1.5rem;
+    border-radius: .75rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.new__overlay {
+    width: 250px;
+    height: 250px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -5rem;
+    left: -.65rem;
+    z-index: 0;
+}
+
+.new__img {
+    position: relative;
+    width: 150px;
+    margin-bottom: var(--mb-2);
+}
+
+.new__price {
+    font-size: var(--h2-font-size);
+}
+
+.new__title {
+    font-weight: var(--font-medium);
+}
+
+.new__button {
+    display: flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.new__card:hover .new__img {
+    transform: translateY(-.5rem);
 }
